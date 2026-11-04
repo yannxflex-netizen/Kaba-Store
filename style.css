@@ -248,4 +248,16 @@ footer b{color:var(--ink)}
 .bgfx i::after{content:"";position:absolute;inset:14% 12% 14%;border:1px solid var(--ink);border-radius:calc(var(--s) * .08);opacity:.6}
 @keyframes flo{from{transform:translateY(0) rotate(var(--r))}to{transform:translateY(-140vh) rotate(calc(var(--r) + 40deg))}}
 @media (prefers-reduced-motion:reduce){.bgfx{display:none}}
-               
+
+/* Note moyenne sur l'accueil */
+.rb{display:inline-flex;align-items:center;gap:8px;margin:0 0 20px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-size:.9rem;color:var(--ink);background:var(--surface)}
+.rb[hidden]{display:none}
+.rb::before{content:"★★★★★";color:#f5a623;letter-spacing:1px}
+
+/* Crédit en bas de page */
+footer .fbot{display:block;text-align:center;margin-top:24px;padding-top:20px;border-top:1px solid var(--line);font-size:.9rem}
+footer .fbot p{margin:4px 0}
+.by{display:inline-flex;align-items:center;gap:6px;font-weight:800;color:var(--ink);text-decoration:none}
+.by svg{width:18px;height:18px}
+.by:hover{text-decoration:underline}
+        
