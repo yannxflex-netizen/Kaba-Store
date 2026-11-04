@@ -217,15 +217,27 @@ footer b{color:var(--ink)}
 .cmpt img{width:100%;max-width:110px;aspect-ratio:1/1;object-fit:contain;display:block;margin:0 auto 6px}
 .cmpt .best{font-weight:800;color:#1e8449}
 .cmpt button{border:0;border-radius:8px;padding:8px 10px;font-weight:600;background:var(--accent);color:var(--accent-ink);width:100%}
+
 /* Favoris */
 .fav{position:absolute;right:8px;top:40px;z-index:3;width:38px;height:38px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:#000;font-size:1.3rem;line-height:1;padding:0;box-shadow:0 2px 6px rgba(0,0,0,.25)}
 .fav.on{color:#c0392b}
-/* Note du site */
-#stars{display:flex;gap:4px;margin:8px 0}
-.star{background:none;border:0;font-size:2.2rem;line-height:1;color:#f5a623;padding:4px}
 
-/* Vous aimerez aussi (à ajouter seulement s'il n'y est pas déjà) */
+/* Vous aimerez aussi */
 .sims{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:8px}
 .sim{display:flex;flex-direction:column;gap:4px;text-align:left;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:8px;font-size:.8rem}
 .sim img,.sim .ph{width:100%;aspect-ratio:1/1;object-fit:contain;border-radius:6px;background:var(--bg);pointer-events:none}
 .sim b{font-size:.8rem}
+
+/* Note du site */
+#stars{display:flex;gap:4px;margin:8px 0}
+.star{background:none;border:0;font-size:2.2rem;line-height:1;color:#f5a623;padding:4px}
+
+/* Questions fréquentes */
+#faq{margin-top:48px}
+#faq details{border:1px solid var(--line);border-radius:12px;background:var(--surface);margin-bottom:8px;padding:0 16px}
+#faq summary{cursor:pointer;font-weight:600;padding:14px 0;list-style:none}
+#faq summary::-webkit-details-marker{display:none}
+#faq summary::after{content:"+";float:right;font-size:1.3rem;line-height:1}
+#faq details[open] summary::after{content:"−"}
+#faq p{margin:0 0 14px;color:var(--muted)}
+       
