@@ -73,7 +73,7 @@ var p=PRODUCTS.filter(function(x){return x.id==id})[0],q=cart[id];n+=q;t+=q*p.pr
 return '<div class="line"><div><b>'+esc(p.name)+'</b><br><span class="meta">'+fmt(p.price)+'</span></div><div><button data-d="'+id+'" aria-label="Retirer un">−</button> '+q+' <button data-u="'+id+'" aria-label="Ajouter un">+</button></div></div>'}).join(""):'<p class="empty">Votre panier est vide. Ajoutez un téléphone depuis le catalogue.</p>';
 $("lhint").hidden=!(n&&mode==="livraison"&&!livOk());renderSugg();$("count").textContent=n;$("total").textContent=fmt(t);["order","promo"].forEach(function(i){var o=$(i),ok=n&&livOk();o.href=ok?waLink(i):"#";o.style.opacity=ok?1:.4;o.style.pointerEvents=ok?"auto":"none"});
 }
-function wa(m){return "https://wa.me/2250100292559?text="+encodeURIComponent(m)}
+function wa(m){return "https://wa.me/2250779672534?text="+encodeURIComponent(m)}
 function livOk(){return mode==="retrait"||$("quartier").value.trim().length>1}
 function waLink(k){
 var liv=mode==="livraison";
