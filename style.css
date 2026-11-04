@@ -240,4 +240,12 @@ footer b{color:var(--ink)}
 #faq summary::after{content:"+";float:right;font-size:1.3rem;line-height:1}
 #faq details[open] summary::after{content:"−"}
 #faq p{margin:0 0 14px;color:var(--muted)}
-       
+
+/* Fond animé : téléphones qui flottent */
+.bgfx{position:fixed;inset:0;overflow:hidden;z-index:-1;pointer-events:none}
+.bgfx i{position:absolute;left:var(--x);bottom:-30vh;width:var(--s);aspect-ratio:1/2;border:2px solid var(--ink);border-radius:calc(var(--s) * .2);opacity:.12;animation:flo var(--d) linear var(--w) infinite;will-change:transform}
+.bgfx i::before{content:"";position:absolute;top:6%;left:50%;width:28%;height:3%;margin-left:-14%;border-radius:4px;background:var(--ink)}
+.bgfx i::after{content:"";position:absolute;inset:14% 12% 14%;border:1px solid var(--ink);border-radius:calc(var(--s) * .08);opacity:.6}
+@keyframes flo{from{transform:translateY(0) rotate(var(--r))}to{transform:translateY(-140vh) rotate(calc(var(--r) + 40deg))}}
+@media (prefers-reduced-motion:reduce){.bgfx{display:none}}
+     
